@@ -14,5 +14,9 @@ def say_bye():
 def greet(name):
     return f'Congratulations {name}'
 
+@app.route('/<name>/<age>')
+def tell(name, age):
+    return f'Hello, You are {name} and {age} years old.'
+
 if __name__ == '__main__':
     app.run(debug=True)
