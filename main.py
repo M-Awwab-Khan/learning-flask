@@ -4,7 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello World'
+    return '<h1 style="text-align: center">Hello World</h1>'\
+            '<p>This is a sample paragraph</p>'\
+            '<img src="https://media.giphy.com/media/ukgcHmvflVWjwE8eU5/giphy.gif?cid=790b7611445wpyc5ewpievp0xxxi3922z1bne2bbvu8x3lqx&ep=v1_gifs_search&rid=giphy.gif&ct=g", width=200>'
 
 @app.route('/bye')
 def say_bye():
