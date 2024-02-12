@@ -14,7 +14,7 @@ def say_bye():
 def greet(name):
     return f'Congratulations {name}'
 
-@app.route('/<name>/<age>')
+@app.route('/<name>/<int:age>')
 def tell(name, age):
     return f'Hello, You are {name} and {age} years old.'
 
